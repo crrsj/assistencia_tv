@@ -54,4 +54,46 @@ public class Cliente implements Serializable {
         this.valor = clienteDTO.valor();
         this.status = clienteDTO.status();
     }
+
+    public void atualizando(ClienteDTO clienteDTO) {
+        if(clienteDTO.nome() != null){
+            this.nome = clienteDTO.nome();
+        }
+        if(clienteDTO.fone() != null){
+            this.fone = clienteDTO.fone();
+        }
+
+        if(clienteDTO.email() != null){
+            this.email = clienteDTO.email();
+        }
+
+        if(clienteDTO.marca() != null){
+            this.marca = clienteDTO.marca();
+        }
+        if(clienteDTO.modelo() != null){
+            this.modelo = clienteDTO.modelo();
+        }
+
+        if(clienteDTO.polegadas() != null){
+            this.polegadas = clienteDTO.polegadas();
+        }
+
+        if(clienteDTO.smart() != null){
+            this.smart = clienteDTO.smart();
+        }
+        if(clienteDTO.descricao() != null){
+            this.descricao = clienteDTO.descricao();
+        }
+
+        if(clienteDTO.dataEntrega() != null){
+            this.dataEntrega = clienteDTO.dataEntrega();
+        }
+
+        if(clienteDTO.valor() != null){
+            this.valor = clienteDTO.valor();
+        }
+        if(clienteDTO.status() != null){
+            this.status = clienteDTO.status();
+        }
+    }
 }
